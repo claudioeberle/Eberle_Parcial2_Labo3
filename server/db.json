@@ -1,0 +1,92 @@
+{
+  "monstruos": [
+    {
+      "id": 1,
+      "nombre": "Drácula",
+      "tipo": "Vampiro",
+      "alias": "Conde",
+      "miedo": 8,
+      "defensa": "Estaca"
+    },
+    {
+      "id": 2,
+      "nombre": "Frankenstein",
+      "tipo": "Zombie",
+      "alias": "Criatura",
+      "miedo": 6,
+      "defensa": "Plata"
+    },
+    {
+      "id": 3,
+      "nombre": "La Llorona",
+      "tipo": "Fantasma",
+      "alias": "Llorona",
+      "miedo": 9,
+      "defensa": "Crucifijo"
+    },
+    {
+      "id": 4,
+      "nombre": "El Hombre Lobo",
+      "tipo": "Hombre Lobo",
+      "alias": "Lobezno",
+      "miedo": 7,
+      "defensa": "Plata"
+    },
+    {
+      "id": 5,
+      "nombre": "Dr. Jekyll y Mr. Hyde",
+      "tipo": "Vampiro",
+      "alias": "Jekyll/Hyde",
+      "miedo": 6,
+      "defensa": "Pocion"
+    },
+    {
+      "id": 6,
+      "nombre": "El Jinete sin Cabeza",
+      "tipo": "Fantasma",
+      "alias": "Sin Cabeza",
+      "miedo": 8,
+      "defensa": "Estaca"
+    },
+    {
+      "id": 7,
+      "nombre": "El Hombre Invisible",
+      "tipo": "Hombre Lobo",
+      "alias": "Invisible",
+      "miedo": 5,
+      "defensa": "Crucifijo"
+    },
+    {
+      "id": 8,
+      "nombre": "La Novia de Frankenstein",
+      "tipo": "Zombie",
+      "alias": "Novia",
+      "miedo": 7,
+      "defensa": "Plata"
+    },
+    {
+      "id": 9,
+      "nombre": "Cthulhu",
+      "tipo": "Esqueleto",
+      "alias": "Gran Antiguo",
+      "miedo": "5",
+      "defensa": "Pocion"
+    },
+    {
+      "id": 10,
+      "nombre": "El Hombre Elefante",
+      "tipo": "Hombre Lobo",
+      "alias": "Elefante",
+      "miedo": "10",
+      "defensa": "Estaca"
+    },
+    {
+      "id": 11,
+      "nombre": "pegajoso",
+      "tipo": "Fantasma",
+      "alias": "stiky",
+      "miedo": "1",
+      "defensa": "Pocion"
+    }
+  ]
+}
