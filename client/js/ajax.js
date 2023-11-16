@@ -88,9 +88,13 @@ function postMonstruo(new_monstruo){
                 const data = JSON.parse(xhr.responseText);
                 console.log(data);
                 localStorage.setItem('monstruos', JSON.stringify(data));
+                console.log(localStorage.getItem('monstruos'));
             }
             else{
+                
                 console.error(`ERROR ${xhr.status}: ${xhr.statusText}`);
+                console.error('Response Text:', xhr.responseText); 
+
             }
             loader.classList.add("oculto");
         }
@@ -180,15 +184,4 @@ function updateMonstruo(updated_monstruo){
     catch(error){
         console.log(error);
     }
-}
-
-function ParseJson(json){
-    let items = [];
-    json.forEach(e => {
-        if(e.id != undefined && e.nombre != undefined && e.tipo != undefined && e.alias != undefined && e.miedo != undefined && e.defensa != undefined){
-            let item = new Monstruo(e.id, e.nombre, e.tipo, e.alias, e.miedo, e.defensa);
-            items.push(item);
-        }
-    });
-    return items;
 }

@@ -18,36 +18,41 @@ function updateMonstruoCards() {
 
     const monstruoContainer = document.getElementById('monstruo-container');
     monstruoContainer.innerHTML = ''; // Limpio el contenido actual
-    let monstruoCard = document.createElement('div');
 
-    if(monstruos.length > 0){
-        console.log(monstruos);
+    if (monstruos.length > 0) {
         monstruos.forEach(monster => {
             // Creo una tarjeta para cada monstruo
             const monstruoCard = document.createElement('div');
-            monstruoCard.classList.add('monstruo-card');
-    
-            // Agrego las características del monstruo a la tarjeta
+            monstruoCard.classList.add('col-lg-4', 'col-md-6', 'col-12'); // Clases Bootstrap para la disposición de columnas
             monstruoCard.innerHTML = `
-                <img src=${definirIcono()} width="45" alt="icono-monstruo">
-                <h2>${monster.nombre}</h2>
-                <p>Alias: ${monster.alias}</p>
-                <p>Defensa: ${monster.defensa}</p>
-                <p>Miedo: ${monster.miedo}</p>
-                <p>Tipo: ${monster.tipo}</p>
+                <div class="card monstruo-card">
+                    <img src=${definirIcono()} class="card-img-top" alt="icono-monstruo">
+                    <div class="card-body">
+                        <h2 class="card-title">${monster.nombre}</h2>
+                        <p class="card-text">Alias: ${monster.alias}</p>
+                        <p class="card-text">Defensa: ${monster.defensa}</p>
+                        <p class="card-text">Miedo: ${monster.miedo}</p>
+                        <p class="card-text">Tipo: ${monster.tipo}</p>
+                    </div>
+                </div>
             `;
-    
+
             // Agrego la tarjeta al contenedor principal
             monstruoContainer.appendChild(monstruoCard);
         });
-    }
-    else{
-        monstruoCard.innerHTML = `
-                <h2>No hay montruos cargados</h2>
-            `;
-    
-            // Agregar la tarjeta al contenedor principal
-            monstruoContainer.appendChild(monstruoCard);
+    } else {
+        const noMonstruosCard = document.createElement('div');
+        noMonstruosCard.classList.add('col-12');
+        noMonstruosCard.innerHTML = `
+            <div class="card">
+                <div class="card-body">
+                    <h2 class="card-title">No hay monstruos cargados</h2>
+                </div>
+            </div>
+        `;
+
+        // Agregar la tarjeta al contenedor principal
+        monstruoContainer.appendChild(noMonstruosCard);
     }
     
 }

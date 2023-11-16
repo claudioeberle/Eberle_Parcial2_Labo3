@@ -34,9 +34,9 @@
     },
     {
       "id": 5,
-      "nombre": "Dr. Jekyll y Mr. Hyde",
+      "nombre": "Doctor Jekyll",
       "tipo": "Vampiro",
-      "alias": "Jekyll/Hyde",
+      "alias": "Mister Hyde",
       "miedo": 6,
       "defensa": "Pocion"
     },
@@ -67,9 +67,9 @@
     {
       "id": 9,
       "nombre": "Cthulhu",
-      "tipo": "Esqueleto",
+      "tipo": "Vampiro",
       "alias": "Gran Antiguo",
-      "miedo": "5",
+      "miedo": 10,
       "defensa": "Pocion"
     },
     {
@@ -77,16 +77,24 @@
       "nombre": "El Hombre Elefante",
       "tipo": "Hombre Lobo",
       "alias": "Elefante",
-      "miedo": "10",
+      "miedo": 4,
       "defensa": "Estaca"
     },
     {
-      "id": 11,
-      "nombre": "pegajoso",
+      "id": 127,
+      "nombre": "Pegajoso",
       "tipo": "Fantasma",
       "alias": "stiky",
       "miedo": "1",
       "defensa": "Pocion"
+    },
+    {
+      "id": 204,
+      "nombre": "a",
+      "tipo": "Esqueleto",
+      "alias": "b",
+      "miedo": "5",
+      "defensa": "Crucifijo"
     }
   ]
 }

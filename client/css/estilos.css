@@ -3,14 +3,21 @@
     src: url(../assets/font/Melted-Monster.ttf) format('truetype');
 }
 
+#error-message{
+
+    font-size: 30px;
+    color: red;
+    text-align: center;
+    background-color: #333;
+}
+
 body {
-    margin: 0;
     font-family:"spooky", sans-serif;
     color: black;
     cursor: url(../assets/cursor/cursor.cur), auto;
 }
 
-header {
+header{
     background-color: black;
     color: orange;
     padding: 10px;
@@ -19,9 +26,8 @@ header {
     align-items: center;
 }
 
-header>h2{
+header h2{
     font-size: 50px;
-    margin-left: 200px;
 }
 
 h1 {
@@ -63,6 +69,7 @@ nav a:hover{
 }
 
 main {
+    padding-left: 100px;
     background-image: url(../assets/img/image-02.jpg);
     background-size: cover;
     background-attachment: fixed;
@@ -70,24 +77,28 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    color: white;
+    color: black;
 }
 
 form {
+    font-size: 20px;
     text-align: center;
     margin-top: 30px;
     border: 2px solid #ccc;
+    border-radius: 10px;
     padding-left: 40px;
     padding-right: 40px;
     padding-top: 20px;
     padding-bottom: 20px;
     padding: 10px;
+    background-color:rgba(77, 77, 78, 0.5);
+
 }
 
 form>label {
     display: block;
     text-align: left;
-    margin-bottom: 5px;
+    margin: 5px;
 }
 
 form input,
@@ -95,14 +106,23 @@ form select,
 form button,
 form #tipo {
     margin-bottom: 10px;
+    font-size: 20px;
 }
 
 form .radio-group {
-    margin-bottom: 10px;
+    margin: 15px;
 }
 
 form input[type="radio"] {
     margin-right: 5px;
+    height: 25px;
+    width: 25px;
+}
+
+form input[type="range"] {
+    margin-right: 5px;
+    height: 50px;
+    width: 300px;
 }
 
 form .button-container {
@@ -131,12 +151,21 @@ form button img{
     padding-right: 8px;
 }
 
+.jumbotron-fluid{
+
+    background-color:rgba(176, 0, 126, 0.5);
+    margin: 15px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
 table {
     width: 80%;
     margin-top: 30px;
     margin-bottom: 30px;
     border-collapse: collapse;
     color: white;
+    font-size: 25px;
 }
 
 table, th, td {
@@ -169,14 +198,19 @@ footer {
     margin: 10px;
     border-radius: 10px;
     border-style: double;
-    border-width: 5px;
+    border-width: 10px;
     background-color: purple;
     border-color: orange;
-    width: 500px;
+    width: 300px;
     text-align: center;
 }
 
 .monstruo-card>h2{
     color: greenyellow;
     size: 15px;
+}
+
+.card-img-top{
+    height: 30px;
+    width: 30px;
 }
