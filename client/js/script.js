@@ -82,6 +82,8 @@
         const monstruosGuardados = localStorage.getItem('monstruos');
         if (monstruosGuardados) {
             monstruos = JSON.parse(monstruosGuardados);
+        } else {
+            console.log("No hay monstruos en el localStorage");
         }
     }
 
